@@ -18,11 +18,11 @@ GUI::~GUI()
 
 void GUI::on_RechneKnopf_clicked()
 {
-        R = ui->Eingabe->toPlainText();
+        R = ui->Eingabe->toPlainText(); // holt sich R aus dem Fel Eingabe in der ui
         qDebug()<<"R=:" << R;
-        Radius = QString(R).toFloat();
+        Radius = QString(R).toFloat(); // R ist Text und wird hier zu Zahl (typ float) und heißt Radius
         qDebug()<<"Radius=:" << Radius;
-        Durchmesser = Radius*2*3.14;
-        QString Atext=QString::number(Durchmesser);
-        ui->Ausgabe->setText(Atext);
+        Durchmesser = Radius*2*3.14; // Berechnet den Durchmesser
+        QString Atext=QString::number(Durchmesser);  // wandelt den Durchmesser (typ float) wieder in Text
+        ui->Ausgabe->setText(Atext); // schreibt den Text (Durchmesser) in Ausgabe
 }
