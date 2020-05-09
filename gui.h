@@ -29,8 +29,8 @@ private:
     QString R;
     QString Atext;
 
-//    float Radius;
-//    float Durchmesser;
+//    float Radius;  // Schichten in GUI nicht benötigt
+//    float Durchmesser; // Schichten in GUI nicht benötigt
 
 };
 #endif // GUI_H
