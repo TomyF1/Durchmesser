@@ -2,7 +2,9 @@
 #define GUI_H
 
 #include <QMainWindow>
-#include <QLineEdit>
+#include <QLineEdit> // Ermöglicht Text Ein und Ausgaben
+
+#include "calc.h" // Schichten includiert den Calc Header
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class GUI; }
@@ -22,11 +24,13 @@ private slots:
 private:
     Ui::GUI *ui;
 
+    Calc Calc_Objekt;  // Schichten erlaubt es in der Calc ein Objekt anzusprechen
+
     QString R;
     QString Atext;
 
-    float Radius;
-    float Durchmesser;
+//    float Radius;
+//    float Durchmesser;
 
 };
 #endif // GUI_H
