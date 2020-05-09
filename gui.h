@@ -21,8 +21,12 @@ private slots:
 
 private:
     Ui::GUI *ui;
+
+    QString R;
+    QString Atext;
+
     float Radius;
     float Durchmesser;
-    QString R;
+
 };
 #endif // GUI_H
