@@ -17,11 +17,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     calc.cpp \
+    dv.cpp \
     main.cpp \
     gui.cpp
 
 HEADERS += \
     calc.h \
+    dv.h \
     gui.h
 
 FORMS += \
